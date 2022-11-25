@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <!-----------bootstrap css------------>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Start Bootstrap</title>
+
+    <style>
+      .navbar-scrolled {
+        background-color: black;
+      }
+
+      .nav-link {
+        color: #fff;
+      }
+
+      .nav-link:hover {
+        color: yellow;
+      }
+
+      .navbar-brand {
+        width: 20%;
+      }
+
+      #services .card {
+        border: none;
+      }
+
+      #services .card div:first-child {
+        background-image: url(./assets/cercle.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+      }
+
+      #services .card img {
+        width: 40%;
+      }
+
+      #portfolio img {
+        width: 100%;
+      }
+
+      #portfolio img:hover {
+        
+      }
+
+      #portfolio .card {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+          <img
+            src="./assets/img/navbar-logo.svg"
+            alt="start bootstrap logo"
+            class="card-img-top"
+        /></a>
+
+        <!-- nav items-->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#services" class="nav-link">SERVICES</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="nav-link">ABOUT</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#team" class="nav-link">TEAM</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+        <!---->
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url(./assets/img/header-bg.jpg);
+          height: 90vh;
+          background-size: 100% 100%;
+        "
+      >
+        <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0)">
+          <div class="d-flex align-items-center justify-content-center h-100">
+            <div class="text-white p-5">
+              <h4 class="mb-3 display-6 fw-bold">Welcome To Our Studio</h4>
+              <h1 class="mb-3 display-1 fw-bold">IT'S NICE TO MEET YOU</h1>
+              <a
+                href="#"
+                class="btn btn-warning btn-lg fw-bold p-2"
+                style="color: #fff"
+                >TELL ME MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY-->
+    <main>
+      <!-- SERVICES -->
+      <div class="container" id="services">
+        <div class="p-5 text-center">
+          <h2 class="section-heading text-uppercase fw-bold">SERVICES</h2>
+          <h6 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h6>
+        </div>
+
+        <!-- =! services -->
+        <div class="row text-center">
+          <div class="col">
+            <div class="card">
+              <div>
+                <img
+                  src="./assets/cart-shopping-solid.svg"
+                  alt="cart-shopping-solid"
+                  class="pt-xl-4"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="section-heading text-huppercase fw-bold">
+                  E-Commerce
+                </h3>
+                <h6 class="section-subheading text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima maxime quam architecto quo inventore harum ex magni,
+                  dicta impedit.
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div>
+                <img
+                  src="./assets/laptop-solid.svg"
+                  alt="cart-shopping-solid"
+                  class="pt-xl-4"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="section-heading text-huppercase fw-bold">
+                  Responsive Design
+                </h3>
+                <h6 class="section-subheading text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima maxime quam architecto quo inventore harum ex magni,
+                  dicta impedit.
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div>
+                <img
+                  src="./assets/lock-solid.svg"
+                  alt="cart-shopping-solid"
+                  class="pt-xl-4"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="section-heading text-huppercase fw-bold">
+                  Web Security
+                </h3>
+                <h6 class="section-subheading text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima maxime quam architecto quo inventore harum ex magni,
+                  dicta impedit.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+
+      <!--PORTFOLIO-->
+      <div class="conttainer bg-light" id="portfolio">
+        <div class="p-5 text-center">
+          <h2 class="section-heading text-uppercase fw-bold">PORTFOLIO</h2>
+          <h6 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h6>
+        </div>
+
+        <!--vitrine-->
+        <div class="container">
+
+          <!--image1-->
+          <div class="row text-center">
+            <div class="col-4">
+              <div class="card">
+                <div>
+                  <img
+                    src="./assets/img/portfolio/1.jpg"
+                    alt="cart-shopping-solid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="section-heading fw-bold">
+                    Threads
+                  </h3>
+                  <h6 class="section-subheading text-muted">Illustration</h6>
+                </div>
+              </div>
+            </div>
+
+            <!--image2-->
+            <div class="col-4">
+              <div class="card">
+                <div>
+                  <img
+                    src="./assets/img/portfolio/2.jpg"
+                    alt="cart-shopping-solid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="section-heading  fw-bold">
+                    Explore
+                  </h3>
+                  <h6 class="section-subheading text-muted">Graphic Design</h6>
+                </div>
+              </div>
+            </div>
+
+            <!--image3-->
+            <div class="col-4">
+              <div class="card">
+                <div>
+                  <img
+                    src="./assets/img/portfolio/3.jpg"
+                    alt="cart-shopping-solid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="section-heading  fw-bold">
+                    Finish
+                  </h3>
+                  <h6 class="section-subheading text-muted">
+                    Identity
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--image4-->
+          <div class="row text-center mt-5">
+            <div class="col-4">
+              <div class="card">
+                <div>
+                  <img
+                    src="./assets/img/portfolio/4.jpg"
+                    alt="cart-shopping-solid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="section-heading fw-bold">
+                    Lines
+                  </h3>
+                  <h6 class="section-subheading text-muted">
+                    Branding
+                  </h6>
+                </div>
+              </div>
+            </div>
+            
+            <!--image5-->
+            <div class="col-4">
+              <div class="card">
+                <div>
+                  <img
+                  src="./assets/img/portfolio/5.jpg"
+                    alt="cart-shopping-solid"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="section-heading  fw-bold">
+                      Southwest
+                    </h3>
+                    <h6 class="section-subheading text-muted">
+                      Website Design
+                    </h6>
+                  </div>
+                </div>
+            </div>
+
+            <!--image6-->
+            <div class="col-4">
+              <div class="card">
+                <div>
+                  <img
+                  src="./assets/img/portfolio/6.jpg"
+                  alt="cart-shopping-solid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="section-heading  fw-bold">
+                    Window
+                  </h3>
+                  <h6 class="section-subheading text-muted">
+                    Photograohy
+                  </h6>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+
+    </main>
+  </body>
+</html>
